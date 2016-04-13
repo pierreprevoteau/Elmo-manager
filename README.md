@@ -1,10 +1,10 @@
 # Elmo-manager
 
 ## Database
-#### Clients(SQL) : title, first_name, last_name, email, provider, uid, ibeacon_id, style_1, style_2, style_3, style_4
+#### Clients(SQL) : title, first_name, last_name, email, provider, uid, ibeacon_id, alt_ibeacon_id style_1, style_2, style_3, style_4
 #### History(SQL-SHORT-CACHE-15) : client_id, song_id
-#### Vote(NOSQL?) : client_id, song_1_id, song_2_id, song_3_id, song_4_id, song_1_vote, song_2_vote, song_3_vote, song_4_vote
-#### Song(SQL-MEDIUM-CACHE-15) : song_id, client_id, category, voted 
+#### Votes(NOSQL?) : client_id, song_1_id, song_2_id, song_3_id, song_4_id, song_1_vote, song_2_vote, song_3_vote, song_4_vote
+#### Songs(SQL-MEDIUM-CACHE-15) : song_id, client_id, category, voted 
 #### Settings(SQL-LONG-CACHE90) : client_id, key, value
 
 ## Jobs

@@ -8,16 +8,18 @@
 #### Settings(SQL-LONG-CACHE90) : client_id, key, value
 
 ## Jobs
-#### add_vote(client_id, song_id)
-#### queue_song(client_id, song_id)
-#### add_song(song_id, category)
-#### copy_playlist_content(client_id, spotify_user_id, spotify_playlist_id)
+#### add_vote(client_id, song_id) Add a +1 for the voted song
+#### queue_song(client_id, song_id) Add the voted song to the bottom of the Elmo-live playlist
+#### add_song(song_id, category) Add a song from a user to the DB
+#### sniff_playlist_content(client_id, spotify_user_id, spotify_playlist_id)
+#### stock_playlist_watcher(client_id)
 
 ## Settings
 #### random_mode : discovery, popular, random, spotify (less voted from db are played, most voted from db are played, thruly random from db, based on spotify recomandation)
 #### new_song_mode : open, checked, close (user can add a song, user can add a song but must be validate by admin, only admin can add a song)
+#### playlist_live_id : id of the live playlist 
+#### playlist_stock_id : id of the stock playlist 
 
 ## Spotify playlist
 #### Elmo-live (currently played and voted)
-#### Elmo-wishlist (when added to this playlist, also added to the Elmo DB)
-#### Elmo-database (copy of the Elmo DB)
+#### Elmo-stock (copy of the Elmo DB, add new song to it also add it to db)

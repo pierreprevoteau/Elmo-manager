@@ -30,3 +30,4 @@
   - Send notification for Happy-Hour ? 
   - More than 4 style ? Maybe picked randomly ? More than 4 vote ?
   - Placebo mode : Users can't see vote-stats when they vote ?
+  - Add youtube provider ? 
